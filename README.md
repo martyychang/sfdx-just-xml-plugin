@@ -30,24 +30,21 @@ USAGE
 ```
 <!-- usagestop -->
 <!-- commands -->
-* [`sfdx-just-xml-plugin just:xml [FILE]`](#sfdx-just-xml-plugin-justxml-file)
+* [`sfdx-just-xml-plugin just:xml`](#sfdx-just-xml-plugin-justxml)
 
-## `sfdx-just-xml-plugin just:xml [FILE]`
+## `sfdx-just-xml-plugin just:xml`
 
 print a greeting and your org IDs
 
 ```
 USAGE
-  $ sfdx-just-xml-plugin just:xml [FILE]
+  $ sfdx-just-xml-plugin just:xml
 
 OPTIONS
-  -f, --force                                      example boolean flag
-  -n, --name=name                                  name to print
-  -u, --targetusername=targetusername              username or alias for the target org; overrides default target org
-  -v, --targetdevhubusername=targetdevhubusername  username or alias for the dev hub org; overrides default dev hub org
-  --apiversion=apiversion                          override the api version used for api requests made by this command
-  --json                                           format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)   logging level for this command invocation
+  -i, --init                                      create sample .justxml file
+  -p, --path=path                                 path to package. Default: 'force-app'
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
 
 EXAMPLES
   $ sfdx just:xml --init

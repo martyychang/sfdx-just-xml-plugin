@@ -23,19 +23,16 @@ File(s) udpated:
   `
   ];
 
-  public static args = [{name: 'file'}];
-
   protected static flagsConfig = {
-    // flag with a value (-n, --name=VALUE)
-    name: flags.string({char: 'n', description: messages.getMessage('nameFlagDescription')}),
-    force: flags.boolean({char: 'f', description: messages.getMessage('forceFlagDescription')})
+    init: flags.boolean({char: 'i', description: messages.getMessage('initFlagDescription')}),
+    path: flags.string({char: 'p', description: messages.getMessage('pathFlagDescription')})
   };
 
   // Comment this out if your command does not require an org username
-  protected static requiresUsername = true;
+  //protected static requiresUsername = true;
 
   // Comment this out if your command does not support a hub org username
-  protected static supportsDevhubUsername = true;
+  //protected static supportsDevhubUsername = true;
 
   // Set this to true if your command requires a project workspace; 'requiresProject' is false by default
   protected static requiresProject = false;
