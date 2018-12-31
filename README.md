@@ -30,15 +30,15 @@ USAGE
 ```
 <!-- usagestop -->
 <!-- commands -->
-* [`sfdx-just-xml-plugin hello:org [FILE]`](#sfdx-just-xml-plugin-helloorg-file)
+* [`sfdx-just-xml-plugin just:xml [FILE]`](#sfdx-just-xml-plugin-justxml-file)
 
-## `sfdx-just-xml-plugin hello:org [FILE]`
+## `sfdx-just-xml-plugin just:xml [FILE]`
 
 print a greeting and your org IDs
 
 ```
 USAGE
-  $ sfdx-just-xml-plugin hello:org [FILE]
+  $ sfdx-just-xml-plugin just:xml [FILE]
 
 OPTIONS
   -f, --force                                      example boolean flag
@@ -58,7 +58,7 @@ EXAMPLES
      Hello myname! This is org: MyOrg and I will be around until Tue Mar 20 2018!
 ```
 
-_See code: [src/commands/hello/org.ts](https://github.com/martyychang/sfdx-just-xml-plugin/blob/v0.0.0/src/commands/hello/org.ts)_
+_See code: [src/commands/just/xml.ts](https://github.com/martyychang/sfdx-just-xml-plugin/blob/v0.0.0/src/commands/just/xml.ts)_
 <!-- commandsstop -->
 <!-- debugging-your-plugin -->
 # Debugging your plugin
