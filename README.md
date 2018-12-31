@@ -50,12 +50,13 @@ OPTIONS
   --loglevel=(trace|debug|info|warn|error|fatal)   logging level for this command invocation
 
 EXAMPLES
-  $ sfdx hello:org --targetusername myOrg@example.com --targetdevhubusername devhub@org.com
-     Hello world! This is org: MyOrg and I will be around until Tue Mar 20 2018!
-     My hub org id is: 00Dxx000000001234
+  $ sfdx just:xml --init
+  Sample .justxml configuration created
   
-  $ sfdx hello:org --name myname --targetusername myOrg@example.com
-     Hello myname! This is org: MyOrg and I will be around until Tue Mar 20 2018!
+  $ sfdx just-xml
+  File(s) udpated:
+
+     force-app/main/default/profiles/Admin.profile-meta.xml
 ```
 
 _See code: [src/commands/just/xml.ts](https://github.com/martyychang/sfdx-just-xml-plugin/blob/v0.0.0/src/commands/just/xml.ts)_
