@@ -39,11 +39,14 @@ File(s) udpated:
 
   public async run(): Promise<AnyJson> {
     
-    // Define and displya an output string
+    // Set the path for the package to process
+    let path = this.flags.path || 'force-app';
+    
+    // Define and display an output string
     let outputString = `Something witty goes here.`;
     this.ux.log(outputString);
 
     // Return an object to be displayed with --json
-    return { name: this.flags.name, outputString };
+    return { init: this.flags.init, path: path, outputString };
   }
 }
